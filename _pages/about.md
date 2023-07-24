@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: About
 title: About
 permalink: /
 description: 
@@ -16,12 +16,20 @@ social: false  # includes social icons at the bottom of the page
 
 Senior , Beijing Normal University<br>
 No.19, Xinjiekouwai St, Haidian District, Beijing, 100875, P.R.China<br>
-202011999099 [at] mail.bnu.edu.cn<br>
-[Github](https://github.com/TianwenZhou) |[Bilibili](https://space.bilibili.com/207013776)|[CV](https://go.jd92.wang/cv) [CV (Chinese)](https://go.jd92.wang/cvchinese)
+202011999099 [at] mail.bnu.edu.cn tianwenzhou0521@gmail.com<br>
+[Github](https://github.com/TianwenZhou) |[Bilibili](https://space.bilibili.com/207013776)|[CV](https://www.jianguoyun.com/p/DefoU7wQiOmkChjJx5EFIAA)| [CV (Chinese)](https://www.jianguoyun.com/p/DXzQKVgQiOmkChjEx5EFIAA)
 
-I'm currently taking my master's degree at [Beijing Normal University(BNU)](http://www.bnu.edu.cn/), majoring in [Mathematics & Applied Mathematics](http://math.bnu.edu.cn/). I previously worked as a Research Assistant in [Smart Media Computing Lab](https://vmcl.bnu.edu.cn/news/index.htm) at Beijing Normal University, in which I mainly worked on Image Denoising and Video Flare Removal.
+I'm currently taking my Bachelor's degree at [Beijing Normal University(BNU)](http://www.bnu.edu.cn/), majoring in [Mathematics & Applied Mathematics](http://math.bnu.edu.cn/). I previously worked as a Research Assistant in [Smart Media Computing Lab](https://vmcl.bnu.edu.cn/news/index.htm) at Beijing Normal University, in which I mainly worked on Image Denoising and Video Flare Removal.
 
-**Research interest:** Machine Learning, Deep Learning, Computer Vision, **NeRF**. These days, I'm particularly interested in Large Language Models (LLMs) robustness.
+**Research interest:** 
 
+Machine Learning, Deep Learning, Computer Vision, **NeRF**. These days, I'm particularly interested in Large Language Models (LLMs) robustness.
 
+**Education Experience:** 
+- 2020.9 - 2024.6 Beijing Normal University, Mathematics & Applied Mathematics, BsC;
 
+**Work Experience**
+- 2022.11 - 2023.6,Worked as a Research Assistant in Smart Media Computing Lab, Beijing Normal University.
+- 2023.5 - 2023.9, Worked as a Research Assistant in Institute for AI Industry Research, Tsinghua University
+- 2023.1 - 2023.4, Worked as a Data Analyst Intern in Didichuxing
+- 2023.5 - 2023.8, Worked as a Product Manager Intern in ByteDance
