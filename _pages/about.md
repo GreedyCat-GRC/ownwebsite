@@ -29,7 +29,6 @@ Machine Learning, Deep Learning, Computer Vision, **NeRF**. These days, I'm part
 - 2020.9 - 2024.6 Beijing Normal University, Mathematics & Applied Mathematics, BsC;
 
 **Work Experience**
-Past Experiences
 - 2022.11 - 2023.6,Worked as a Research Assistant in Smart Media Computing Lab, Beijing Normal University.
 - 2023.5 - 2023.9, Worked as a Research Assistant in Institute for AI Industry Research, Tsinghua University
 - 2023.1 - 2023.4, Worked as a Data Analyst Intern in Didichuxing
