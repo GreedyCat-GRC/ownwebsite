@@ -5,83 +5,39 @@ title: Research
 nav: true
 ---
 
-<center>
-<img src="../assets/img/research.png" style="width: 85%"/>
-</center>
 
-The long-term research goal is to build robust models for modern AI, such as pre-trained models and large models. We create new theory, algorithms, applications, and open-sourced library to achieve our goal.
-These days, we are specifically interested in **robustness in large language models (LLMs)**.
+##### Video Flare Sythesis & Removal
 
-Our research consists of the following topics with selected publications: [[View by year](https://jd92.wang/publications/)]
+### 1. 杂散光产生的原理
+透镜系统中杂散光可以分为两个主要类别：由散射引起的和由反射引起的
+通常情况下，透镜会沿着未知的方向散射和反射光线，导致杂散光的产生。通常情况下，这种散射和反射的光线强度都很小，不会对图像产生过多影响。但是当入射光强度较大时，特别是比其他位置的光强得多时，这样的散射和反射光线的影响就会增大，进而对图像产生可见的影响。
 
-##### New: large models
-
-- [arXiv'23] [A Survey on Evaluation of Large Language Models](https://arxiv.org/abs/2307.03109). Yupeng Chang, Xu Wang, Jindong Wang, Yuan Wu, Kaijie Zhu, Hao Chen, Linyi Yang, Xiaoyuan Yi, Cunxiang Wang, Yidong Wang, Wei Ye, Yue Zhang, Yi Chang, Philip S. Yu, Qiang Yang, Xing Xie. [[code](https://github.com/MLGroupJLU/LLM-eval-survey)]
-- [arXiv'23] [PromptBench: Towards Evaluating the Robustness of Large Language Models on Adversarial Prompts](https://arxiv.org/abs/2306.04528). Kaijie Zhu, Jindong Wang, Jiaheng Zhou, Zichen Wang, Hao Chen, Yidong Wang, Linyi Yang, Wei Ye, Neil Zhenqiang Gong, Yue Zhang, Xing Xie. [[code](https://github.com/microsoft/promptbench)]
-- [arXiv'23] [PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization](https://arxiv.org/abs/2306.05087). Yidong Wang, Zhuohao Yu, Zhengran Zeng, Linyi Yang, Cunxiang Wang, Hao Chen, Chaoya Jiang, Rui Xie, Jindong Wang, Xing Xie, Wei Ye, Shikun Zhang, Yue Zhang. [[code](https://github.com/WeOpenML/PandaLM)]
-- **[ACL'23 findings]** [GLUE-X: Evaluating Natural Language Understanding Models from an Out-of-distribution Generalization Perspective](https://arxiv.org/abs/2211.08073). Linyi Yang, Shuibai Zhang, Libo Qin, Yafu Li, Yidong Wang, Hanmeng Liu, Jindong Wang, Xing Xie, Yue Zhang.
-- **[ICLR'23 large model workshop]** [On the Robustness of ChatGPT: An Adversarial and Out-of-distribution Perspective](https://arxiv.org/abs/2302.12095). Jindong Wang, Xixu Hu, Wenxin Hou, Hao Chen, Runkai Zheng, Yidong Wang, Linyi Yang, Haojun Huang, Wei Ye, Xiubo Geng, Binxin Jiao, Yue Zhang, and Xing Xie.
-- [arXiv'23] [Exploring Vision-Language Models for Imbalanced Learning](https://arxiv.org/abs/2304.01457). Yidong Wang, Zhuohao Yu, Jindong Wang, Qiang Heng, Hao Chen, Wei Ye, Rui Xie, Xing Xie, Shikun Zhang. [[code](https://github.com/Imbalance-VLM/Imbalance-VLM)]
-- Open source:
-  - [Project SearchAnything](https://github.com/Immortalise/SearchAnything): semantic local search.
+## 1.1 散射引起的杂散光
+在理想情况下，透镜应该仅发生折射，将入射的光线折射到相平面上，而在实际情况中，散射现象的产生主要是由于透镜的瑕疵，如划痕、磨损、灰尘等。
+在这当中，划痕的存在会导致图像中出现由图像中光源出发，向四周呈条纹状发射的散射光，而灰尘的存在会导致“彩虹样”散射光的出现。
 
 
-##### Out-of-distribution (Domain) generalization and adaptation for distribution shift
+## 1.2 反射引起的杂散光
+由于常见的镜头是由多个平面镜、透镜组成的，因此，在各个光学器件之间存在着一定的反射现象（约4%）。光线在光学器件之间经历多次反射后，可能会反射到像平面上的任意位置，这一反射光与光源的入射角高度相关，但与绕着主光轴转动的角度无关。
+反射引起的杂散光有着较为特殊的几何性质：
+首先，其形状与孔径的形状相同（多为5-16边形）
 
-- **[ICCV'23]** Improving Generalization of Adversarial Training via Robust Critical Fine-Tuning. Kaijie Zhu, Xixu Hu, Jindong Wang, Xing Xie, Ge Yang.
-- **[ICLR'23]** [Out-of-distribution Representation Learning for Time Series Classification](https://arxiv.org/abs/2209.07027). Wang Lu, Jindong Wang, Xinwei Sun, Yiqiang Chen, and Xing Xie.
-- **[KDD'23]** [Domain-Specific Risk Minimization for Out-of-Distribution Generalization](https://arxiv.org/pdf/2208.08661.pdf). YiFan Zhang, Jindong Wang, Jian Liang, Zhang Zhang, Baosheng Yu, Liang Wang, Xing Xie, and Dacheng Tao.
-- **[KDD'23]** [Generalizable Low-Resource Activity Recognition with Diverse and Discriminative Representation Learning](ddd). Xin Qin, Jindong Wang, Shuo Ma, Wang Lu, Yongchun Zhu, Xing Xie, Yiqiang Chen.
-- **[ACL'23 findings]** [GLUE-X: Evaluating Natural Language Understanding Models from an Out-of-distribution Generalization Perspective](https://arxiv.org/abs/2211.08073). Linyi Yang, Shuibai Zhang, Libo Qin, Yafu Li, Yidong Wang, Hanmeng Liu, Jindong Wang, Xing Xie, Yue Zhang.
-- **[KDD'23 workshop]** [Towards Optimization and Model Selection for Domain Generalization: A Mixup-guided Solution](https://arxiv.org/abs/2209.00652). Wang Lu, Jindong Wang, Yidong Wang, Kan Ren, Yiqiang Chen, Xing Xie.
-- **[TKDE'22]** [Generalizing to Unseen Domains: A Survey on Domain Generalization](https://arxiv.org/abs/2103.03097). Jindong Wang, Cuiling Lan, Chang Liu, Yidong Ouyang, Tao Qin, Wang Lu, Yiqiang Chen, Wenjun Zeng, and Philip S. Yu.
-- **[TMLR'22]** [Domain-invariant Feature Exploration for Domain Generalization](https://arxiv.org/abs/2207.12020). Wang Lu, Jindong Wang, Haoliang Li, Yiqiang Chen, and Xing Xie.
-- **[UbiComp'22]** [Semantic-Discriminative Mixup for Generalizable Sensor-based Cross-domain Activity Recognition](http://arxiv.org/abs/2206.06629). Wang Lu, Jindong Wang, Yiqiang Chen, Sinno Pan, Chunyu Hu, and Xin Qin.
-- **[NeurIPS'21]** [Learning causal semantic representation for out-of-distribution prediction](https://arxiv.org/abs/2011.01681). Chang Liu, Xinwei Sun, Jindong Wang , Haoyue Tang, Tao Li, Tao Qin, Wei Chen, and Tie-Yan Liu.
-- **[CIKM'21]** [Adarnn: Adaptive learning and forecasting of time series](https://arxiv.org/abs/2108.04443). Yuntao Du, Jindong Wang, Wenjie Feng, Sinno Pan, Tao Qin, Renjun Xu, and Chongjun Wang.
-- **[TNNLS'20, 300 + citations]** [Deep subdomain adaptation network for image classification](https://ieeexplore.ieee.org/document/9085896). Yongchun Zhu, Fuzhen Zhuang, Jindong Wang, Guolin Ke, Jingwu Chen, Jiang Bian, Hui Xiong, and Qing He.
-- **[ACMMM'18, 400+ citations]** [Visual domain adaptation with manifold embedded distribution alignment](https://jd92.wang/assets/files/a11_mm18.pdf). Jindong Wang, Wenjie Feng, Yiqiang Chen, Han Yu, Meiyu Huang, and Philip S Yu.
-- **[ICDM'17, 400+ citations]** [Balanced distribution adaptation for transfer learning](http://ieeexplore.ieee.org/document/8215613/?part=1). Jindong Wang, Yiqiang Chen, Shuji Hao, Wenjie Feng, and Zhiqi Shen.
-- Open-source: 
-  - [Transfer learning](https://github.com/jindongwang/transferlearning) [![Transfer learning repo](https://img.shields.io/github/stars/jindongwang/transferlearning?style=social)](https://github.com/jindongwang/transferlearning)
-  - robustlearn: A unified repo for robust machine learning, such as OOD and adversarial robustness: [robustlearn](https://github.com/microsoft/robustlearn) [![robustlearn](https://img.shields.io/github/stars/microsoft/robustlearn?style=social)](https://img.shields.io/github/stars/microsoft/robustlearn)
-  - PandaLM: [PandaLM](https://github.com/WeOpenML/PandaLM) [![robustlearn](https://img.shields.io/github/stars/WeOpenML/PandaLM?style=social)](https://img.shields.io/github/stars/WeOpenML/PandaLM)
+其次，其排列在光源中心和主光轴所成直线上：
 
-##### Semi-supervised learning for low-resource learning
+再次，反射引起的杂散光存在一定的伸缩，这一伸缩的系数与多边形杂散光中心到主光轴距离与到光源距离的比例有关；
+除此以外，散射引起的杂散光还因为空气散射等原因，存在边缘模糊的现象；
+### 2. 图像去杂散光算法
+目前，图像去杂散光领域已有多篇论文研究，绝大多数都采用深度学习的方法，方法较多且较成熟；其大多遵循先合成杂散光，再训练神经网络将其去除的办法。对于视频去杂散光而言，虽然视频可以视作许多帧图像的结合，从合成杂散光上讲，这样的方法没有考虑时序性，使得无法进行视频杂散光合成，即不知道某一帧中的物体在下一帧如何移动，进而也就不知道光源位置该如何变化。
+从去除杂散光上讲，图像去杂散光算法很容易引起帧间的时空不一致性，这是因为杂散光对图像的亮度和对比度有较大的影响，基于学习的方法对图像进行处理的话，很容易使其本身场景的亮度和对比度发生漂移，而偏移量很大程度取决于模型和场景内容，从而导致不同帧间可能存在较大的亮度及对比度差异，极大程度影响视觉观感和机器感知。
+去除杂散光的任务和去噪，超分辨还不一样，这两个任务对帧间亮度等的影响较小，毕竟细节和噪声等细粒度信息对图像整体的影响并非致命的，不像杂散光是直接对图像整体有偏移，帧间差异就很明显且致命了，这会导致视频出现严重的跳帧等现象。
+### 3. 现有杂散光数据集存在的问题
+现有视频集并未按照相机是否移动、光源是否移动等性质进行分类。且目前并不存在含杂散光的视频数据集，因此，我们需要进行杂散光视频集的合成。
+### 4. 杂散光视频集的合成
+总的来说，根据相机和场景的运动情况与杂散光的性质，我们按照如下方法生成杂散光：
+相机动，光源动杂散光根据相对位置计算，反射光和散射光均变
+相机动，光源不动杂散光根据相对位置计算，且反射光变化大，散射光变化小
+相机不动，光源动（把光源设置在运动物体上）杂散光变化，反射光和散射光均变化
+相机不动，光源不动（设置在背景上）杂散光不变
+在视频集上合成杂散光的过程中，我们需要根据视频集前后两帧的光流预测其下一帧的杂散光位置该如何变化，在生成视频集光流时，我们采用目前效果最好的FlowFormer光流估计法，进行视频集的光流合成
+在这之后，我们按照杂散光的物理性质与几何性质，给定光源位置，合成随着光源位置和相机位置变化的杂散光视频集
 
-- **[ICLR'23]** [FreeMatch: Self-adaptive Thresholding for Semi-supervised Learning](https://arxiv.org/abs/2205.07246). Yidong Wang, Hao Chen, Qiang Heng, Wenxin Hou, Yue Fan, Zhen Wu, Jindong Wang, Marios Savvides, Takahiro Shinozaki, Bhiksha Raj, Bernt Schiele, and Xing Xie.
-- **[ICLR'23]** [SoftMatch: Addressing the Quantity-Quality Tradeoff in Semi-supervised Learning](https://arxiv.org/abs/2301.10921). Hao Chen, Ran Tao, Yue Fan, Yidong Wang, Jindong Wang, Bernt Schiele, Xing Xie, Bhiksha Raj, and Marios Savvides.
-- **[NeurIPS'22]** [USB: A Unified Semi-supervised Learning Benchmark](https://arxiv.org/abs/2208.07204). Yidong Wang, Hao Chen, Yue Fan, Wang Sun, Ran Tao, Wenxin Hou, Renjie Wang, Linyi Yang, Zhi Zhou, Lan-Zhe Guo, Heli Qi, Zhen Wu, Yu-Feng Li, Satoshi Nakamura, Wei Ye, Marios Savvides, Bhiksha Raj, Takahiro Shinozaki, Bernt Schiele, Jindong Wang, Xing Xie, and Yue Zhang.
-- **[TASLP'22]** [Exploiting Adapters for Cross-lingual Low-resource Speech Recognition](https://arxiv.org/abs/2105.11905). Wenxin Hou, Han Zhu, Yidong Wang, Jindong Wang, Tao Qin, Renjun Xu, and Takahiro Shinozaki.
-- **[NeurIPS'21, 200+ citations]** [Flexmatch: Boosting semi-supervised learning with curriculum pseudo labeling](https://arxiv.org/abs/2110.08263). Bowen Zhang, Yidong Wang, Wenxin Hou, Hao Wu, Jindong Wang, Manabu Okumura, and Takahiro Shinozaki.
-- Open-source:
-  - USB: A unified semi-supervised learning toolbox for CV, NLP, and Audio: [USB](https://github.com/microsoft/Semi-supervised-learning) [![USB](https://img.shields.io/github/stars/microsoft/semi-supervised-learning?style=social)](https://img.shields.io/github/stars/microsoft/semi-supervised-learning)
-  - A unified Pytorch-based semi-supervised learning library: **[TorchSSL](https://github.com/TorchSSL/TorchSSL) [![SSL repo](https://img.shields.io/github/stars/torchssl/torchssl?style=social)](https://github/stars/torchssl/torchssl)
-
-
-##### Safe transfer learning for security
-
-- **[TNNLS'23]** [MetaFed: Federated Learning among Federations with Cyclic Knowledge Distillation for Personalized Healthcare](https://arxiv.org/pdf/2206.08516.pdf). Yiqiang Chen, Wang Lu, Xin Qin, Jindong Wang , and Xing Xie. 
-- **[ICSE'22]** [ReMoS: Reducing Defect Inheritance in Transfer Learning via Relevant Model Slicing](https://jd92.wang/assets/files/icse22-remos.pdf). Ziqi Zhang, Yuanchun Li, Jindong Wang, Bingyan Liu, Ding Li, Xiangqun Chen, Yao Guo, and Yunxin Liu.
-- **[IEEE Data Engineering Bulletin'23]** FedCLIP: Fast Generalization and Personalization for CLIP in Federated Learning. Wang Lu, Xixu Hu, Jindong Wang, Xing Xie. [[arxiv](https://arxiv.org/abs/2302.13485)]
-- **[IEEE TBD'22]** [Personalized Federated Learning with Adaptive Batchnorm for Healthcare](https://arxiv.org/abs/2112.00734). Wang Lu, Jindong Wang, Yiqiang Chen, Xin Qin, Renjun Xu, Dimitrios Dimitriadis, and Tao Qin.
-- **[TKDE'22]** [Unsupervised deep anomaly detection for multi-sensor time-series signals](https://arxiv.org/abs/2107.12626). Yuxin Zhang, Yiqiang Chen, Jindong Wang, and Zhiwen Pan.
-- **[IntSys'22, 400+ citations]** [Fedhealth: A federated transfer learning framework for wearable healthcare](https://ieeexplore.ieee.org/document/9076082). Yiqiang Chen, Xin Qin, Jindong Wang, Chaohui Yu, and Wen Gao. 
-- Open-source:
-  - PersonalizedFL: a personalized federated learning libraty: [PersonalizedFL](https://github.com/microsoft/PersonalizedFL) [![PersonalizedFL](https://img.shields.io/github/stars/microsoft/personalizedfl?style=social)](https://img.shields.io/github/stars/microsoft/personalizedfl)
-  - robustlearn: A unified repo for robust machine learning, such as OOD and adversarial robustness: [robustlearn](https://github.com/microsoft/robustlearn) [![robustlearn](https://img.shields.io/github/stars/microsoft/robustlearn?style=social)](https://img.shields.io/github/stars/microsoft/robustlearn)
-
-##### Imbalanced learning for long-tailed tasks
-
-- **[arXiv'23]** [Exploring Vision-Language Models for Imbalanced Learning](https://arxiv.org/abs/2304.01457). Yidong Wang, Zhuohao Yu, Jindong Wang, Qiang Heng, Hao Chen, Wei Ye, Rui Xie, Xing Xie, Shikun Zhang.
-- **[ACML'22]** [Margin Calibration for Long-Tailed Visual Recognition](https://arxiv.org/abs/2112.07225). Yidong Wang, Bowen Zhang, Wenxin Hou, Zhen Wu, Jindong Wang, and Takahiro Shinozaki.
-- Open-source:
-  - Imbalance-VLM: a library for imbalanced learning in vision-language models. [[Imbalance-VLM](https://github.com/Imbalance-VLM/Imbalance-VLM)]
-
-##### Miscellaneous
-
-1. An easy-to-use speech recognition toolkit based on Espnet: [EasyESPNet](https://github.com/jindongwang/EasyEspnet)
-2. Leading the transfer learning tutorial (迁移学习简明手册) on Github:
-                    [Tutorial](https://github.com/jindongwang/transferlearning-tutorial)
-3. I'm also leading other popular research projects: [Machine learning](https://github.com/jindongwang/MachineLearning), [Activity recognition](https://github.com/jindongwang/activityrecognition)
-4.  I started a software studio *Pivot Studio* and made many applications in 2010-2014: <img src="/assets/img/logo.png" width="100" /> [Our applications](https://v.youku.com/v_show/id_XNjI2Njg2MzAw.html?spm=a2hbt.13141534.1_2.d_1&scm=20140719.manual.114461.video_XNjI2Njg2MzAw)
