@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /research/videoflareremoval
-nav: false
+nav: true
 ---
 # Video Flare Synthesis and Removal
 
